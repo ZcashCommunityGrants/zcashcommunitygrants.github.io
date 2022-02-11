@@ -1,9 +1,9 @@
 links:
-- name: Portfolio
+- name: About us
   link: /portfolio/
 - name: Blog
   link: /blog/
-- name: About
+- name: How to apply
   link: /about/
 - name: Contact
   link: /contact/

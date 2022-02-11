@@ -6,8 +6,7 @@ google_maps_javascript_api_key:
 disqus_shortname:
 
 # Default description in social shares for the jekyll-seo-tag gem
-description: The Zcash Community Grants program funds independent teams entering the Zcash ecosystem, to perform major ongoing development (or other work) for the public good of the
-Zcash ecosystem.
+description: The Zcash Community Grants program funds independent teams entering the Zcash ecosystem, to perform major ongoing development (or other work) for the public good of the Zcash ecosystem.
 
 # Author details for the jekyll-seo-tag gem
 author:

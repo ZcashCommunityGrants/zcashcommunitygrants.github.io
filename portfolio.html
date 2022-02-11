@@ -1,7 +1,7 @@
 ---
-title: Portfolio
-heading: Grants we funded
-subtitle: See some of our recently funded grants.
+title: About us
+heading: Zcash Community Grants
+subtitle: Do you have what it takes to contribute to the adoption and usability of Zcash? We invite you to apply for a grant. It’s simple!
 ---
 
 <section class="diagonal patterned">
@@ -21,6 +21,17 @@ subtitle: See some of our recently funded grants.
 			{% endfor %}
 			<li class="filler"></li>
 			<li class="filler"></li>
+		</ul>
+	</div>
+</section>
+
+<section class="diagonal patterned">
+	<div class="container">
+	    <p class="editor-link" style="text-align: center;"><a href="cloudcannon:collections/_staff_members/" class="btn"><strong>&#9998;</strong>Meet the team</a></p>
+		<ul class="image-grid">
+			{% for member in site.staff_members %}
+				<li>{% include staff-member.html member=member %}</li>
+			{% endfor %}
 		</ul>
 	</div>
 </section>

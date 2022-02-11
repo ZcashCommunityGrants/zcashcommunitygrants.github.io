@@ -93,7 +93,7 @@ _select_data:
   social_icons:
     # - Facebook
     # - Instagram
-    # - LinkedIn
+    - LinkedIn
     # - Pinterest
     # - Tumblr
     - Twitter

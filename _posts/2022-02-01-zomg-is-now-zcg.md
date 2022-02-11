@@ -16,7 +16,7 @@ Our new identity encompasses all the existing expectations of what the Zcash Ope
 
 With Zcash and the Zcash community in mind, our goal was to pick a name that is simple, timeless, and consistent with other programs in the industry, one that would facilitate search engine optimization (SEO). This is how we arrived at “Zcash Community Grants”.
 
-As of this moment, our Twitter handle has changed to @ZcashCommGrants 10 and you can find us on the web at ![zcashcommunitygrants.org](https://zcashcommunitygrants.org)
+As of this moment, our Twitter handle has changed to @ZcashCommGrants 10 and you can find us on the web at [zcashcommunitygrants.org](https://zcashcommunitygrants.org)
 
 We are now a few weeks into our role as Zcash community-elected major grants committee members. We’ve been engaged in a flurry of activity with the Zcash Foundation ranging from understanding current policies and ZF resources made available to the committee, approving the largest grant in Major Grants history to bring shielded assets to Zcash 3, and discussing exciting things to come such as a Zcash Ambassador Program, multiple RFPs and grant ideas, and upcoming milestone deliverables for currently active grants. One of our additional tasks in the upcoming weeks will be to update all our online branding to better reflect the changes described above.
 
@@ -26,8 +26,8 @@ Sincerely,
 
 Zcash Community Grants Committee
 
-![@Aditya](https://twitter.com/aiyadt)
-![@Jason](https://twitter.com/aquietinvetor)
-![@Michael](https://twitter.com/michaelharms70)
-![@Hudson](https://twitter.com/hudsonjameson)
-![@Brian](https://twitter.com/wobbzz)
+[@aiyadt](https://twitter.com/aiyadt)
+[@Jason](https://twitter.com/aquietinvetor)
+[@Michael](https://twitter.com/michaelharms70)
+[@Hudson](https://twitter.com/hudsonjameson)
+[@wobbzz](https://twitter.com/wobbz2z)

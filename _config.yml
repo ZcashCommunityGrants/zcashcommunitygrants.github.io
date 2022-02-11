@@ -1,12 +1,13 @@
-title: Urban Template
-url: "https://teal-worm.cloudvent.net"
+title: Zcash Community Grants
+url: "https://zcashcommunitygrants.org"
 baseurl:
 google_analytics_key:
 google_maps_javascript_api_key:
 disqus_shortname:
 
 # Default description in social shares for the jekyll-seo-tag gem
-description: Jekyll template with example content for a web agency.
+description: The Zcash Community Grants program funds independent teams entering the Zcash ecosystem, to perform major ongoing development (or other work) for the public good of the
+Zcash ecosystem.
 
 # Author details for the jekyll-seo-tag gem
 author:
@@ -16,9 +17,9 @@ author:
 
 # Social details for the jekyll-seo-tag gem
 social:
-  name: Urban Template
+  name: Zcash Community Grants
   links:
-    - https://github.com/CloudCannon/urban-jekyll-template
+    - https://github.com/ZcashCommunityGrants/zcashcommunitygrants.github.io
 
 timezone: Etc/UTC
 
@@ -91,11 +92,11 @@ defaults:
 
 _select_data:
   social_icons:
-    - Facebook
-    - Instagram
-    - LinkedIn
-    - Pinterest
-    - Tumblr
+    # - Facebook
+    # - Instagram
+    # - LinkedIn
+    # - Pinterest
+    # - Tumblr
     - Twitter
-    - YouTube
-    - RSS
+    # - YouTube
+    # - RSS

@@ -5,8 +5,12 @@ layout: default
 
 <section class="hero diagonal">
 	<div class="container">
-		<p>
-		<p>
+		<style>
+      		p::before {
+        	content: "\A";
+        	white-space: pre;
+      		}
+    	</style>
 		{% if portfolio.heading %}
 		<h2><a href="{{ site.baseurl }}/portfolio/">{{ portfolio.heading }}</a> / {{ page.title | capitalize }}</h2>
 		{% endif %}

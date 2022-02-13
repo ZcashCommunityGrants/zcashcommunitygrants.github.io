@@ -1,0 +1,46 @@
+---
+title: How to Apply
+heading: How to apply:
+subtitle: Interested in applying for a Zcash Community Grant? Please take the time to review this entire page before submitting an application.
+---
+
+
+<section class="hero diagonal">
+	<div class="container">
+		<h2 class="editable">Zcash Community Grants Program</h2>
+		<p class="subtext editable">We fund independent teams entering the Zcash ecosystem, to perform major ongoing development (or other work) for the public good of the Zcash ecosystem. Funding for Zcash Community Grants comes from the Major Grants slice of the Zcash Dev Fund. Grants are chosen by a Eve-person committee elected by the Zcash Community.</p>
+		<p><a class="button alt" href="{{ site.baseurl }}/contact/">Contact Us</a></p>
+	</div>
+</section>
+
+<section class="diagonal patterned">
+	<div class="container halves">
+		<div>
+			<h3 class="editable">Some of our work</h3>
+			<p class="editable">We take pride in our previous work and our happy customers. We cater to any sector to boost business and increase exposure.</p>
+			<p class="editable"><a href="{{ site.baseurl }}/portfolio/">View Full Portfolio &rarr;</a></p>
+		</div>
+		<div>
+			<ul class="image-grid">
+				{% for client in site.clients limit: 4 %}
+					<li><a href="{{ site.baseurl }}{{ client.url }}"><img src="{% include relative-src.html src=client.image_path %}"></a></li>
+				{% endfor %}
+			</ul>
+		</div>
+	</div>
+</section>
+
+<section class="diagonal alternate">
+	<div class="container halves">
+		<div>
+			<ul class="image-list">
+				<li><img src="{{ site.baseurl }}/images/cloudcannon-logo-blue.svg" width="250" style="margin-bottom: 40px;"></li>
+				<li><img src="{{ site.baseurl }}/images/jekyll-logo-black-red-transparent.png" width="300"></li>
+			</ul>
+		</div>
+		<div>
+			<h3 class="editable">Latest software, greatest perfomance</h3>
+			<p class="editable">We aim to provide grants to teams of all sizes, from the individual hobbyist to specialist teams. Hobbyists and small teams have been the lifeblood of the Zcash ecosystem since its launch in 2016. We’d also like to reach out to large organizations who may not be actively looking to apply to grant programs, such as exchanges and widely adopted wallet providers. This will allow us to tap into their network of users and infrastructure, and ultimately accelerate our impact. We believe that this mix of small and large teams will allow us to spread more quickly and eEectively across the sea of potential ZEC users.</p>
+		</div>
+	</div>
+</section>

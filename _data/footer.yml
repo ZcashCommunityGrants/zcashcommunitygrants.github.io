@@ -2,14 +2,20 @@
   links:
     - name: Home
       link: /
-    - name: Portfolio
+    - name: About us
       link: /portfolio/
-    - name: Blog
+    - name: How to apply
+      link: /apply/
+    - name: What we fund
+      link: /fund/
+    - name: Selection Process
+      link: /selection/
+    - name: News
       link: /blog/
-    - name: About
-      link: /about/
     - name: Contact
       link: /contact/
+
+
 - title: Social
   links:
     - name: Twitter

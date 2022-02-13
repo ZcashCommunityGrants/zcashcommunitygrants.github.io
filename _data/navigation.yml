@@ -1,9 +1,15 @@
 links:
+- name: Home
+  link: /index/
 - name: About us
   link: /portfolio/
-- name: Blog
-  link: /blog/
 - name: How to apply
-  link: /about/
+  link: /apply/
+- name: What we fund
+  link: /fund/
+- name: Selection Process
+  link: /selection/
+- name: News
+  link: /blog/
 - name: Contact
   link: /contact/

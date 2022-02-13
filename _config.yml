@@ -10,15 +10,15 @@ description: The Zcash Community Grants program funds independent teams entering
 
 # Author details for the jekyll-seo-tag gem
 author:
-  name:
-  email:
+  name: Zcash Community Grants
+  email: grants@zfnd.org
   twitter: # twitter username without the @ symbol
 
 # Social details for the jekyll-seo-tag gem
 social:
   name: Zcash Community Grants
   links:
-    - https://github.com/ZcashCommunityGrants/zcashcommunitygrants.github.io
+    - https://zcashcommunitygrants.org
 
 timezone: Etc/UTC
 

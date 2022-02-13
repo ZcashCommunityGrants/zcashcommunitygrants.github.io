@@ -1,5 +1,7 @@
 ---
 title: Zcash Community Grants
+heading: Zcash Community Grants
+subtitle: Do you have what it takes to contribute to the adoption and usability of Zcash? We invite you to apply for a grant. It’s simple!
 ---
 
 <section class="hero diagonal">
@@ -10,8 +12,37 @@ title: Zcash Community Grants
 	</div>
 </section>
 
-
 <section class="diagonal patterned">
+    <div class="container halves">
+        <div>
+            <p>The Zcash Community Grants program (formerly known as ZOMG) funds independent teams entering the Zcash ecosystem, to perform major ongoing development (or other work) for the public good of the Zcash ecosystem.</p>
+        </div>
+        <div>
+            <p>Funding for Zcash Community Grants comes from the Major Grants slice of the Zcash Dev Fund. Grants are chosen by a five-person committee elected by the Zcash Community.</p>
+        </div>
+    </div>
+</section>
+
+<section class="diagonal alternate">
+	<div class="container">
+	    <p class="editor-link" style="text-align: center;"><a href="cloudcannon:collections/_staff_members/" class="btn"><strong>&#9998;</strong>Meet the team</a></p>
+		<ul class="image-grid">
+			{% for member in site.staff_members %}
+				<li>
+					<a href="{{ site.baseurl }}{{ member.url }}">
+						<img src="{% include relative-src.html src=member.image_path %}" alt="{{ person.name }}">
+						<div class="details">
+							<div class="name">{{ member.name }}</div>
+						</div>
+					</a>
+				</li>
+			{% endfor %}
+		</ul>
+	</div>
+</section>
+
+
+<section class="diagonal alternate">
 	<div class="container">
 	    <p class="editor-link" style="text-align: center;"><a href="cloudcannon:collections/_staff_members/" class="btn"><strong>&#9998;</strong>Meet the team</a></p>
 		<ul class="image-grid">

@@ -24,7 +24,7 @@ timezone: Etc/UTC
 
 collections:
   staff_members:
-    output: false
+    output: true
   clients:
     output: true
 
@@ -71,6 +71,7 @@ defaults:
       path: ""
       type: "staff_members"
     values:
+      layout: "page"
       _options:
         image_path:
           width: 600

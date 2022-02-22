@@ -2,11 +2,9 @@
   links:
     - name: Home
       link: /
-    - name: How to apply
-      link: /apply/
-    - name: Selection Process
+    - name: Grant Process
       link: /selection/
-    - name: Grants Committee
+    - name: Grant Committee
       link: /committee/
     - name: News
       link: /blog/

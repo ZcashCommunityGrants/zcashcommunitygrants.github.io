@@ -84,6 +84,16 @@
 .container.title-container {
 	margin-top: 80px;
 }
+.flex-container {
+	display: flex;
+	flex-direction: column;
+	ul {
+		text-align: left;
+    	display: inline-block;
+		margin: 0 auto;
+		margin-bottom: 20px;
+	}
+}
 
 header {
 	color: #fff;

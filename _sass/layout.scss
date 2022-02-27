@@ -25,6 +25,7 @@
 .accordion .label::before {
   content: '+';
   color: white;
+  font-weight: bold;
   position: absolute;
   top: 24px;
   right: -5px;

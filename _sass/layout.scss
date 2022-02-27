@@ -232,6 +232,9 @@ section {
 	}
 }
 
+    
+
+
 .aligned-top {
 	align-items: flex-start;
 }
@@ -325,5 +328,23 @@ section {
 	&,
 	p {
 		color: #fefefe;
+	}
+}
+
+@media (max-width: 620px) {
+	.halves.even {
+		flex-direction: column-reverse;
+	}
+}
+
+@media (max-width: 900px) {
+	.accordion {
+		width: 98%;
+		padding: 10px 0px;
+		margin: 0 5px;
+
+		.content {
+			width: 100%;
+		}
 	}
 }

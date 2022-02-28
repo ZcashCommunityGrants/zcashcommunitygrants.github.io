@@ -221,7 +221,7 @@ subtitle: Do you have what it takes to contribute to the adoption and usability 
             const [ price, trash, totalReceived, balance ] = data.values;
             $("#zec-price").text(price[0])
             $("#zec-balance").text(balance[0])
-            const usdBalance = +price[0].slice(1) * +balance[0].replace(/,/, "")
+            const usdBalance = +price[0].slice(1).replace(/,/g, "") * +balance[0].replace(/,/g, "")
             const usdMillionsBalance = (usdBalance / 1000000).toFixed(1)
             $("#usd-millions-balance").text(`$${usdMillionsBalance}M`)
         })

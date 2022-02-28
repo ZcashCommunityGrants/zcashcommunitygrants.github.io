@@ -39,8 +39,8 @@ subtitle: Do you have what it takes to contribute to the adoption and usability 
         <div>
             <p style="text-align: center"> Zcash Community Grants currently has:</p>
             <ul style="text-align: center; list-style-type: none">
-                <li>~100k ZEC which equates to...</li>
-                <li>~$11M USD at $110 ZECUSD</li>
+                <li><span id="zec-balance">~100,000</span> ZEC which equates to</li>
+                <li><span id="usd-millions-balance">$11M</span> USD at <span id="zec-price">$110</span> ZECUSD</li>
             </ul>
         </div>
     </div>
@@ -208,8 +208,23 @@ subtitle: Do you have what it takes to contribute to the adoption and usability 
     <div class="container">
         <hr style="color:grey">
         <p>
-        <p style="text-align: center">Check <a href="https://docs.google.com/spreadsheets/d/1O5fhsMswA6pq9RnamN8I32JSu5DPul9ohBq6UTSJVb0/edit#gid=365717344">this dashboard</a> for the most up to date figures.</p>
+        <p style="text-align: center">Check <a href="https://docs.google.com/spreadsheets/d/1O5fhsMswA6pq9RnamN8I32JSu5DPul9ohBq6UTSJVb0/edit#gid=365717344">this dashboard</a> for a complete list of grants and milestones paid.</p>
     </div>
 </section>
 
 
+<script>
+    // Google Sheets Treasury API
+    const dashboardSheetsQueryUrl = "https://sheets.googleapis.com/v4/spreadsheets/1O5fhsMswA6pq9RnamN8I32JSu5DPul9ohBq6UTSJVb0/values/B4:B7?key=AIzaSyCArbMUqSXL43M4wRgXY8kFzu4MVZhCgTw"
+    axios.get(dashboardSheetsQueryUrl)
+        .then(({data}) => {
+            const [ price, trash, totalReceived, balance ] = data.values;
+            $("#zec-price").text(price[0])
+            $("#zec-balance").text(balance[0])
+            const usdBalance = +price[0].slice(1) * +balance[0].replace(/,/, "")
+            const usdMillionsBalance = (usdBalance / 1000000).toFixed(1)
+            $("#usd-millions-balance").text(`$${usdMillionsBalance}M`)
+        })
+        .catch(console.error)
+    
+</script>

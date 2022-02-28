@@ -16,7 +16,7 @@ The first cohort of Ambassadors will start March 1 and serve an initial trial pe
 
 Over time, if the program is successful and proves to be a value add to the Zcash community, we hope to include more community members from different parts of the world. We are also considering expanding it to support project-based activities such as organizing meetups, moderating social media channels, and translating materials into non-English languages. Although the first cohort was chosen by the grants committee, future Ambassadors will be nominated and selected by the community.
 
-Please use this thread to share any questions or feedback you have related to the program or specific Ambassadors.
+Please use [this thread](https://forum.zcashcommunity.com/t/the-global-ambassador-program/41070) to share any questions or feedback you have related to the program or specific Ambassadors.
 
 Thank you,
 

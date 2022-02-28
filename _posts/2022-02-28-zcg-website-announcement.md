@@ -2,7 +2,7 @@
 title: ZCG Website Announcement
 categories:
   - news
-author_staff_member: aiyadt
+author_staff_member: aditya
 show_comments: false
 ---
 

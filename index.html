@@ -232,10 +232,10 @@ subtitle: Do you have what it takes to contribute to the adoption and usability 
         .then(({data}) => {
             let [ [price], trash, [totalReceived], [balance] ] = data.values;
             $("#zec-balance").text(balance)
-            axios.get("https://api.coingecko.com/api/v3/coins/zcash/tickers")
+            axios.get("https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=zcash")
                 .then(({data}) => {
-                    if (data.tickers) {
-                        price = data.tickers[0].last
+                    if (data[0]) {
+                        price = data[0].current_price
                         $("#zec-price").text(`$${price.toFixed(2)}`)
                         const cRgx = /[\$,]/g
                         const usdBalance = price * +balance.replace(cRgx, "")

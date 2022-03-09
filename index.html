@@ -217,15 +217,9 @@ subtitle: Do you have what it takes to contribute to the adoption and usability 
     // Google Sheets Treasury API
     const dashboardSheetsQueryUrl = "https://sheets.googleapis.com/v4/spreadsheets/1O5fhsMswA6pq9RnamN8I32JSu5DPul9ohBq6UTSJVb0/values/B4:B7?key=AIzaSyCArbMUqSXL43M4wRgXY8kFzu4MVZhCgTw"
 
-    function textDateString() {
-        let date = new Date().toDateString()
-        let [dayOfWeek, month, day, year] = date.split(" ")
-
-        if (day[0] == "0") {
-            day = day.slice(1)
-        }
-        
-        return `${month} ${day}, ${year},`
+    function getDateDisclaimer() {
+        let [dayOfWeek, month, day, year] = new Date().toDateString().split(" ")
+        return `${month} ${day[0] === "0" ? day.slice(1) : day}, ${year},`
     }
 
     axios.get(dashboardSheetsQueryUrl)
@@ -241,7 +235,7 @@ subtitle: Do you have what it takes to contribute to the adoption and usability 
                         const usdBalance = price * +balance.replace(cRgx, "")
                         const usdMillionsBalance = (usdBalance / 1000000).toFixed(1)
                         $("#usd-millions-balance").text(`$${usdMillionsBalance}M`)
-                        $("#date-disclaimer").text(`As of ${textDateString()}`)
+                        $("#date-disclaimer").text(`As of ${getDateDisclaimer()}`)
                     }
                 })
                 .catch(console.error)

@@ -222,8 +222,9 @@ subtitle: Do you have what it takes to contribute to the adoption and usability 
         let [dayOfWeek, month, day, year] = date.split(" ")
 
         if (day[0] == "0") {
-            day = day.slice(1) + ","
+            day = day.slice(1)
         }
+        day += ","
         
         return [month, day, year].join(" ")
     }

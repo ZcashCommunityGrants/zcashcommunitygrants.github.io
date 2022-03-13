@@ -225,6 +225,7 @@ subtitle: Do you have what it takes to contribute to the adoption and usability 
     axios.get(dashboardSheetsQueryUrl)
         .then(({data}) => {
             let [ [price], trash, [totalReceived], [balance] ] = data.values;
+            $("#date-disclaimer").text(`As of ${getDateDisclaimer()}`)
             $("#zec-balance").text(balance)
             axios.get("https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=zcash")
                 .then(({data}) => {
@@ -235,7 +236,6 @@ subtitle: Do you have what it takes to contribute to the adoption and usability 
                         const usdBalance = price * +balance.replace(cRgx, "")
                         const usdMillionsBalance = (usdBalance / 1000000).toFixed(1)
                         $("#usd-millions-balance").text(`$${usdMillionsBalance}M`)
-                        $("#date-disclaimer").text(`As of ${getDateDisclaimer()}`)
                     }
                 })
                 .catch(console.error)

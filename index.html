@@ -8,7 +8,7 @@ subtitle: Do you have what it takes to contribute to the adoption and usability 
 	<div class="container title-container">
 		<h2 class="editable">Zcash Community Grants</h2>
 		<p class="subtext editable">Do you have what it takes to contribute to the adoption and usability of Zcash? We invite you to apply for a grant. It’s simple!</p>
-		<p><a class="button alt" href="{{ site.baseurl }}/contact/">Contact Us</a></p>
+		<p><a style="margin-right: 10px" target="_blank" rel="noopener noreferrer" class="button alt" href="https://zcashgrants.org">Submit a Grant</a><a class="button alt" href="{{ site.baseurl }}/contact/">Contact Us</a></p>
 	</div>
 </section>
 
@@ -34,10 +34,10 @@ subtitle: Do you have what it takes to contribute to the adoption and usability 
     </div>
     <div class="container halves">
         <div>
-            <p style="text-align: center"><a href="https://zips.z.cash/zip-1014">ZIP-1014</a>, <a href="https://www.zfnd.org/blog/community-sentiment-collection-results/">voted</a> and <a href="https://forum.zcashcommunity.com/t/community-sentiment-polling-results-nu4-and-draft-zip-1014/35560">agreed</a> upon by the Zcash community, provides ongoing major grant funding to the ecosystem through 8% of the Zcash mining reward until the second halving in 2024.</p>
+            <p style="text-align: center"><a href="https://zips.z.cash/zip-1014">ZIP-1014</a>, <a href="https://zfnd.org/community-sentiment-polling-results-nu4/">voted</a> and <a href="https://forum.zcashcommunity.com/t/community-sentiment-polling-results-nu4-and-draft-zip-1014/35560">agreed</a> upon by the Zcash community, provides ongoing major grant funding to the ecosystem through 8% of the Zcash mining reward until the second halving in 2024.</p>
         </div>
         <div>
-            <p style="text-align: center"> Zcash Community Grants currently has:</p>
+            <p style="text-align: center"><span id="date-disclaimer"></span><br/> Zcash Community Grants has:</p>
             <ul style="text-align: center; list-style-type: none">
                 <li><span id="zec-balance">~100,000</span> ZEC which equates to</li>
                 <li><span id="usd-millions-balance">$11M</span> USD at <span id="zec-price">$110</span> ZECUSD</li>
@@ -216,15 +216,32 @@ subtitle: Do you have what it takes to contribute to the adoption and usability 
 <script>
     // Google Sheets Treasury API
     const dashboardSheetsQueryUrl = "https://sheets.googleapis.com/v4/spreadsheets/1O5fhsMswA6pq9RnamN8I32JSu5DPul9ohBq6UTSJVb0/values/B4:B7?key=AIzaSyCArbMUqSXL43M4wRgXY8kFzu4MVZhCgTw"
+
+    function getDateDisclaimer() {
+        let [dayOfWeek, month, day, year] = new Date().toDateString().split(" ")
+        return `${month} ${day[0] === "0" ? day.slice(1) : day}, ${year},`
+    }
+
     axios.get(dashboardSheetsQueryUrl)
         .then(({data}) => {
-            const [ price, trash, totalReceived, balance ] = data.values;
-            $("#zec-price").text(price[0])
-            $("#zec-balance").text(balance[0])
-            const usdBalance = +price[0].slice(1).replace(/,/g, "") * +balance[0].replace(/,/g, "")
-            const usdMillionsBalance = (usdBalance / 1000000).toFixed(1)
-            $("#usd-millions-balance").text(`$${usdMillionsBalance}M`)
+            let [ [price], trash, [totalReceived], [balance] ] = data.values;
+            $("#date-disclaimer").text(`As of ${getDateDisclaimer()}`)
+            $("#zec-balance").text(balance)
+            axios.get("https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=zcash")
+                .then(({data}) => {
+                    if (data[0]) {
+                        price = data[0].current_price
+                        $("#zec-price").text(`$${price.toFixed(2)}`)
+                        const cRgx = /[\$,]/g
+                        const usdBalance = price * +balance.replace(cRgx, "")
+                        const usdMillionsBalance = (usdBalance / 1000000).toFixed(1)
+                        $("#usd-millions-balance").text(`$${usdMillionsBalance}M`)
+                    }
+                })
+                .catch(console.error)
         })
         .catch(console.error)
+
+        
     
 </script>

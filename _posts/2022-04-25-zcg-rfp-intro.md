@@ -17,8 +17,9 @@ So far, the committee has issued two RFPs for qualified individuals or companies
 
 If you’re interested in submitting a bid for one of these projects, the RFPs can be accessed as a PDF document and are available for discussion on the Zcash Community Forum here:
 
-Zcash Podcast [PDF](https://github.com/ZcashCommunityGrants/zcashcommunitygrants.github.io/raw/main/RFP/Podcast-RFP.pdf) [Forum link](https://forum.zcashcommunity.com/t/rfp-zcash-podcast/41314)
-Zcash UniFFI Library [PDF](https://github.com/ZcashCommunityGrants/zcashcommunitygrants.github.io/raw/main/RFP/UniFFI-RFP.pdf) [Forum link](https://forum.zcashcommunity.com/t/rfp-zcash-uniffi-library/41335)
+- Zcash Podcast [PDF](https://github.com/ZcashCommunityGrants/zcashcommunitygrants.github.io/raw/main/RFP/Podcast-RFP.pdf) [Forum link](https://forum.zcashcommunity.com/t/rfp-zcash-podcast/41314)
+
+- Zcash UniFFI Library [PDF](https://github.com/ZcashCommunityGrants/zcashcommunitygrants.github.io/raw/main/RFP/UniFFI-RFP.pdf) [Forum link](https://forum.zcashcommunity.com/t/rfp-zcash-uniffi-library/41335)
 
 There are many more RFIs and RFPs that will be published in the coming months for projects and initiatives we’ve identified as a high priority.  Stay tuned, keep an eye out on the RFI-RFP Category on [the Forum](https://forum.zcashcommunity.com/c/grants/rfi-rfp-grants/42), and please [Contact us](https://zcashcommunitygrants.org/contact/) if you have any feedback or questions.   
 

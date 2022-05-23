@@ -8,6 +8,8 @@
       link: /committee/
     - name: News
       link: /blog/
+    - name: Code of Conduct
+      link: /codeofconduct/
     - name: Contact
       link: /contact/
 

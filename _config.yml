@@ -47,6 +47,13 @@ exclude:
   - Gemfile.lock
   - README.md
   - LICENCE
+  - ".*"
+  - node_modules
+  - vendor
+  - .sass-cache
+  - .jekyll-cache
+  - gemfiles
+  - Rakefile
 
 defaults:
   - scope:

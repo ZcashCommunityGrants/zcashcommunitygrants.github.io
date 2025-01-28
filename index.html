@@ -240,7 +240,7 @@ subtitle: Do you have what it takes to contribute to the adoption and usability 
 
 <script>
     // Google Sheets Treasury API
-    const dashboardSheetsQueryUrl = "https://sheets.googleapis.com/v4/spreadsheets/1O5fhsMswA6pq9RnamN8I32JSu5DPul9ohBq6UTSJVb0/values/B4:B13?key=AIzaSyCArbMUqSXL43M4wRgXY8kFzu4MVZhCgTw"
+    const dashboardSheetsQueryUrl = "https://sheets.googleapis.com/v4/spreadsheets/1O5fhsMswA6pq9RnamN8I32JSu5DPul9ohBq6UTSJVb0/values/B4:B14?key=AIzaSyCArbMUqSXL43M4wRgXY8kFzu4MVZhCgTw"
 
     function getDateDisclaimer() {
         let [dayOfWeek, month, day, year] = new Date().toDateString().split(" ")
@@ -249,7 +249,7 @@ subtitle: Do you have what it takes to contribute to the adoption and usability 
 
     axios.get(dashboardSheetsQueryUrl)
         .then(({data}) => {
-            let [ [price], trash, trashi, trashii, [totalReceived], trashiii, trashiiii, trashiiiii, trashiiiiii, [balance] ] = data.values;
+            let [ [price], trash, trashi, trashii, [totalReceived], trashiii, trashiiii, trashiiiii, trashiiiiiii, [balance] ] = data.values;
             $("#date-disclaimer").text(`As of ${getDateDisclaimer()}`)
             $("#zec-balance").text(balance)
             axios.get("https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=zcash")

@@ -249,7 +249,7 @@ subtitle: Do you have what it takes to contribute to the adoption and usability 
 
     axios.get(dashboardSheetsQueryUrl)
         .then(({data}) => {
-            let [ [price], trash, trashi, trashii, [totalReceived], trashiii, trashiiii, trashiiiii, trashiiiiiii, [balance] ] = data.values;
+            let [ [price], trash, trashi, trashii, [totalReceived], trashiii, trashiiii, trashiiiii, trashiiiiii, trashiiiiiii, [balance] ] = data.values;
             $("#date-disclaimer").text(`As of ${getDateDisclaimer()}`)
             $("#zec-balance").text(balance)
             axios.get("https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=zcash")

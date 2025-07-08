@@ -26,7 +26,7 @@ We are grateful to the NYM Project team, for actively testing, giving feedback, 
 
 Finally, to all community members who shared ideas, helped with testing, and offered feedback — thank you. We hope this project demonstrates a responsible and efficient use of ZCG funds for real-world privacy adoption.
 
-Pay for NYM services privately using Zcash!
+### Pay for NYM services privately using Zcash!
 
 We invite everyone to use ZEC to pay for services at [nym.com](https://nym.com/) and help advance privacy-preserving payments online. This is the first real-world showcase of shielded Zcash payments via BTCPayServer, and anyone can participate.
 

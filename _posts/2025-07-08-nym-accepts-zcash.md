@@ -4,7 +4,7 @@ categories:
   - news
 show_comments: false
 ---
-#### NYM + Zcash + BTCPayServer
+#### NYM + Zcash + BTCPayServer = ❤️
 
 We’re excited to share that the NYM Project is now the first service to officially accept shielded ZEC payments via the updated BTCPayServer plugin. NYM is a leading provider of decentralized mixnet services — a type of network that anonymizes internet traffic to protect users from surveillance and censorship. Privacy is at the core of everything NYM does: they don’t collect metrics and aim to eliminate any possibility of identifying the payer. That’s why integrating shielded Zcash payments was a natural and important step for them.
 

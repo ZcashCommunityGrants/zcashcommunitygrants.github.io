@@ -22,7 +22,7 @@ This milestone was only possible thanks to the hard work of many individuals and
 
 A special thanks to BTCPayServer founder and lead developer Nicolas Dorier, whose contributions to open and decentralized payments are immeasurable. If you believe that cryptocurrency is more than just speculation — that it can drive real economic change — follow @BtcpayServer on X and support the project.
 
-Huge thanks also go out to the passionate Zcash community contributors: [@hhanh00](https://x.com/hhanh00), who built the first version of the plugin and [@1337Bytes](https://x.com/1337Bytes), who refined and modernized it for the current BTCPayServer version, bringing it to production-ready status.
+Huge thanks also go out to the passionate Zcash community contributors: [@hhanh072](https://x.com/hhanh072), who built the first version of the plugin and [@1337Bytes](https://x.com/1337Bytes), who refined and modernized it for the current BTCPayServer version, bringing it to production-ready status.
 
 We are grateful to the NYM Project team, for actively testing, giving feedback, and becoming the first live adopter of the plugin.
 

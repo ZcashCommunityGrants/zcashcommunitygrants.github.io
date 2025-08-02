@@ -1,6 +1,6 @@
 ---
 name: Brian (aka Wobbzz)
-position: Committee Member
+position: Former Committee Member
 image_path: ../images/wobbz_400x400.jpg
 twitter: wobbz2z
 hidden: true

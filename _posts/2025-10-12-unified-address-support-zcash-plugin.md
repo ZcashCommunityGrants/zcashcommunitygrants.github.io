@@ -4,6 +4,8 @@ categories:
   - news
 show_comments: false
 ---
+#### Zcash + BTCPayServer = ❤️
+
 We’re excited to share that, thanks to the **Zcash Community Grants** program, the Zcash plugin for **BTCPayServer** now supports **Orchard / Unified Address** enabling merchants to receive ZEC through the most advanced shielded pool, integrated directly into the plugin architecture.
 
 There’s also a fix for **non-dollar custom rate rules**, allowing any currency rate to be derived from ZEC-BTC, and an entry has been added for **ZEC-EUR**.

@@ -12,7 +12,7 @@ If you’re already accepting ZEC using the plugin, switching to the new address
 
 After updating the plugin’s Docker repository, a new configuration and wallet file will be created — the database file `zec-wallet.db` will be used instead of `zec-wallet2.db`, together with the new configuration file, config2.json (located inside the `zec_wallet` Docker volume).
 
-On the first launch, you’ll be prompted to enter your **Unified Full Viewing Key (UFVK)**. You may use the UFVK from the same wallet as before. Before updating, check the **current Zcash block height** on [3xpl.com/zcash](3xpl.com/zcash) and note the number — you’ll need it when configuring the wallet. Enter this value as your **birth height** to scan only new Orchard transactions and skip older Sapling history. Once complete, your server will start receiving payments via Unified Addresses.
+On the first launch, you’ll be prompted to enter your **Unified Full Viewing Key (UFVK)**. You may use the UFVK from the same wallet as before. Before updating, check the **current Zcash block height** on [3xpl.com/zcash](https://3xpl.com/zcash) and note the number — you’ll need it when configuring the wallet. Enter this value as your **birth height** to scan only new Orchard transactions and skip older Sapling history. Once complete, your server will start receiving payments via Unified Addresses.
 
 _If you haven’t yet accepted ZEC through BTCPayServer, start with these setup guides:_
 

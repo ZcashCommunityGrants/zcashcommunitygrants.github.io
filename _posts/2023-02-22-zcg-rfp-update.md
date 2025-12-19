@@ -27,7 +27,7 @@ If you’re interested in submitting a bid for one of these projects, the RFPs c
 
 - Zcash UniFFI Library [PDF](https://github.com/ZcashCommunityGrants/zcashcommunitygrants.github.io/raw/main/RFP/Zcash-Memo-Field-Secure-Messaging-Extension.pdf) [Forum link](https://forum.zcashcommunity.com/t/rfp-zcash-memo-field-secure-messaging-extension/44069)
 
-Stay tuned, keep an eye out on the RFI-RFP Category on [the Forum](https://forum.zcashcommunity.com/c/grants/rfi-rfp-grants/42), and please [Contact us](https://zcashcommunitygrants.org/contact/) if you have any feedback or questions.   
+Stay tuned, keep an eye out on the RFI-RFP Category on [the Forum](https://forum.zcashcommunity.com/c/grants/rfi-rfp-grants/42), and please [Contact us](https://forum.zcashcommunity.com/c/grants/33) if you have any feedback or questions.   
 
 –
 

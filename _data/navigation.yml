@@ -8,4 +8,5 @@ links:
 - name: News
   link: /blog/
 - name: Contact
-  link: /contact/
+  link: https://forum.zcashcommunity.com/c/grants/33
+  new_window: true
